@@ -1,0 +1,39 @@
+.fragment.blur {
+    filter: blur(5px);
+}
+.fragment.blur.visible {
+    filter: none;
+}
+
+.footer {
+    position: fixed;
+    left: 6px;
+    bottom: 6px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    .logo1 {
+        background-image: url('../images/maxsessions.png');
+        background-size:cover;
+        width: 64px;
+        height: 64px;
+    }
+    
+    .logo2 {
+        background-image: url('../images/netcore.png');
+        background-size:cover;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .logo3 {
+        background-image: url('../images/signalr.svg');
+        background-size:cover;
+        width: 48px;
+        height: 48px;
+    }
+}
