@@ -18,28 +18,25 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1 class="fragment shrink">
+					<h1 class="fragment shrink" data-fragment-index="0">
 						MaxSessions
 					</h1>
-					<span class="fragment r-fit-text">
+					<span class="fragment r-fit-text current-visible" data-fragment-index="0">
 						Comment ne pas blâmer SignalR quand les perfs vont mal ?
 					</span>
 				</section>
 				<section>
 					<section>
-						<h1>Introduction</h1>
-						<p class="fragment custom blur">(un peu trop longue)</p>
-						<p class="fragment custom blur">(qui a pas trop de rapport)</p>
-						<img src="dist/images/troll.png" height="128" class="fragment"/>
+						<h2>Introduction</h2>
+						<p>(un peu trop longue)</p>
+						<p>(qui a pas trop de rapport)</p>
 					</section>
 					<section>
-						<div class="fragment">
-							<h2>Paris</h2>
-							<div class="r-stack">
-								<img src="dist/images/paris.jpg" height="360"/>
-								<img class="fragment" src="dist/images/bouffe.webp" height="360" style="transform: rotate(12deg)"/>
-								<img class="fragment" src="dist/images/bar.jpg" height="360" style="transform: rotate(-9deg)"/>
-							</div>
+						<h2>Paris</h2>
+						<div class="r-stack">
+							<img src="dist/images/paris.jpg" height="360"/>
+							<img class="fragment" src="dist/images/bouffe.png" height="360" style="transform: rotate(12deg)"/>
+							<img class="fragment" src="dist/images/bar.jpg" height="360" style="transform: rotate(-9deg)"/>
 						</div>
 					</section>
 					<section>
@@ -55,7 +52,7 @@
 						<h1><span class="fragment">.</span><span class="fragment">.</span><span class="fragment">.</span></h1>
 						<div class="fragment r-stack">
 							<img src="dist/images/paris.jpg" height="360"/>
-							<img class="fragment" src="dist/images/bouffe.webp" height="360" style="transform: rotate(12deg)"/>
+							<img class="fragment" src="dist/images/bouffe.png" height="360" style="transform: rotate(12deg)"/>
 							<img class="fragment" src="dist/images/bar.jpg" height="360" style="transform: rotate(-9deg)"/>
 						</div>
 					</section>
@@ -68,27 +65,145 @@
 					<section>
 						<h3>Format</h3>
 						<div class="r-stack">
-							<img class="fragment current-visible" src="dist/images/2022groupstage.jpg" height="480"/>
+							<img class="fragment fade-out" data-fragment-index="0" src="dist/images/2022groupstage.jpg" height="480"/>
+							<img class="fragment current-visible" data-fragment-index="0" src="dist/images/echec.jpg" height="480"/>
 							<img class="fragment current-visible" src="dist/images/Swiss.jpg" height="480"/>
 						</div>
 					</section>
 					<section>
-						<img src="dist/images/waiting-intensifies.jpg" height="480"/>
+						<h3>Rapport ?</h3>
+						<div class="r-stack">
+							<img class="fragment fade-out" data-fragment-index="0" src="dist/images/waiting-intensifies.jpg" height="480"/>
+							<img class="fragment current-visible" data-fragment-index="0" src="dist/images/knacki.gif" height="480"/>
+							<img class="fragment current-visible" src="dist/images/missing-signalr.png" height="480"/>
+						</div>
 					</section>
 					<section>
-						<img src="dist/images/knacki.gif" height="480"/>
+						<img src="dist/images/cacharge.png" height="320"/>
 					</section>
 				</section>
 				<section>
-				<section>
-					<h1>MaxLan</h1>
+					<section>
+						<img src="dist/images/maxlan-logo.png"/>
+					</section>
+					<section>
+						<div class="r-stack">
+							<img class="fragment fade-out" data-fragment-index="0" src="dist/images/maxlan.png" height="480"/>
+							<img class="fragment current-visible" data-fragment-index="0" src="dist/images/bagarre.jpg" height="480"/>
+							<img class="fragment current-visible" src="dist/images/excel-maxlan.png" height="480"/>
+						</div>
+					</section>
+					<section>
+						<ul>
+							<li class="fragment custom blur">Beaucoup d'applis existantes</li>
+							<li class="fragment custom blur">Répondent à 80% du besoin</li>
+							<li class="fragment custom blur">Pas fait par un Max</li>
+						</ul>
+						<div class="fragment">
+							<img src="dist/images/thonk.png" height="160"/>
+						</div>
+					</section>
+					<section>
+						<img src="dist/images/thanos.gif" height="480"/>
+					</section>
+					<section>
+						<h3>Back</h3>
+						<ul>
+							<li class="list-item fragment">
+								<img src="dist/images/netcore.png" height="48"/> 
+								.net8 (je sais faire que ça)
+							</li>
+							<li class="list-item fragment">
+								<img src="dist/images/json.png" height="48"/> 
+								Fichier JSON tout claqué 
+								<img class="fragment" width="48" src="dist/images/monkas.png"/>
+							</li>
+							<li class="list-item fragment">
+								<img src="dist/images/signalr.svg" height="48"/> 
+								SignalR pour pas appuyer sur F5
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Front</h3>
+						<ul>
+							<li class="list-item fragment"><img src="dist/images/react.svg" width="48"/> React</li>
+							<li class="list-item fragment">
+								<img src="dist/images/tailwind.png" width="48"/> 
+								<span class="animate__bounceInDown" data-split="letters" data-delay="20" style="white-space:nowrap;">
+									Tailwind, parce que ce qui est bien avec tailwind c'est que c'est pas trop verbeux en un sens et ça permet de faire des choses simples tout en ayant une certaine liberté
+								</span>
+							</li>
+							<li class="list-item fragment">
+								<img src="dist/images/signalr.svg" width="48"/> 
+								SignalR pour pas appuyer sur F5
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Data</h3>
+						<div class="vertical-list">
+							<div class="fragment list-item">
+								<img src="dist/images/lemecquafaitlalib.png" width="64"/>
+								<img src="dist/images/github.png" width="64"/> 
+								JSON Flat file DataStore</div>
+							<div class="list-item">
+								<img class="fragment" src="dist/images/facileaswap.png" height="160"/> 
+								<img class="fragment" src="dist/images/thonk.png" height="128"/>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h3>SignalR</h3>
+						<ul>
+							<li class="list-item fragment custom blur-current">
+								<img src="dist/images/netcore.png" height="48"/> 
+								Techno real-time pour du .net
+							</li>
+							<li class="list-item fragment custom blur-current">
+								<img src="dist/images/websocket.png" height="48"/> 
+								Prend la première techno compatible
+							</li>
+							<li class="list-item fragment custom blur-current">
+								<img src="dist/images/js.png" height="48"/>
+								<img src="dist/images/ts.png" height="48"/>
+								<img src="dist/images/csharp.png" height="48"/>
+								Librairie Front JS/TS/C#
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2 class="animate__bounceInLeft animate__slow">
+							<img src="dist/images/partyparrot.gif" height="96" style="margin: 0;"/>
+							<span class="rainbow">Petite démo</span>
+							<img src="dist/images/partyparrot.gif" height="96" style="margin: 0;"/>
+						</h2>
+					</section>
 				</section>
 				<section>
-					<img src="dist/images/maxlan.png" height="480"/>
+					<section>
+						<h1>Après la tempète</h1>
+					</section>
+					<section>
+						<div class="r-stack">
+							<div class="fragment fade-out" data-fragment-index="0">
+								<h3>JsonDataFile-Yeet.gif</h3>
+								<img src="dist/images/yeet.gif" height="360" />
+							</div>
+							<div class="fragment current-visible" data-fragment-index="0">
+								<h3>😍 MongoDB 😍</h3>
+								<img src="dist/images/jealous-json.png" height="360" />
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2 class="animate__bounceInLeft animate__slow">
+							<img src="dist/images/partyparrot.gif" height="96" style="margin: 0;"/>
+							<span class="rainbow">Re-Petite démo</span>
+							<img src="dist/images/partyparrot.gif" height="96" style="margin: 0;"/>
+						</h2>
+					</section>
 				</section>
-				</section>
-				<section>Slide 1</section>
-				<section>Slide 2</section>
 			</div>
 		</div>
 		<footer class="footer">
@@ -98,18 +213,14 @@
 		</footer>
 
 		<script src="dist/reveal.js"></script>
+		<script src="node_modules/reveal.js-appearance/plugin/appearance/appearance.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, Appearance ]
 			});
 		</script>
 	</body>

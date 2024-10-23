@@ -6,6 +6,34 @@
   filter: none;
 }
 
+.fragment.blur-current {
+  filter: blur(5px);
+}
+
+.fragment.blur-current.current-fragment {
+  filter: none;
+}
+
+.reveal .rainbow {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vertical-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
 .footer {
   position: fixed;
   left: 6px;
