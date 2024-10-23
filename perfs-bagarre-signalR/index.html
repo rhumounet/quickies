@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Perfs, SignalR, Bagarre</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -24,12 +24,19 @@
 					<span class="fragment r-fit-text current-visible" data-fragment-index="0">
 						Comment ne pas blâmer SignalR quand les perfs vont mal ?
 					</span>
+					<aside class="notes">
+						BonjourBienvenue
+						Bullshit présentation 3.0
+					</aside>
 				</section>
 				<section>
 					<section>
 						<h2>Introduction</h2>
 						<p>(un peu trop longue)</p>
 						<p>(qui a pas trop de rapport)</p>
+						<aside class="notes">
+							Week-end à Paris
+						</aside>
 					</section>
 					<section>
 						<h2>Paris</h2>
@@ -212,15 +219,16 @@
 			<div class="logo3"></div>
 		</footer>
 
-		<script src="dist/reveal.js"></script>
-		<script src="node_modules/reveal.js-appearance/plugin/appearance/appearance.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
+		<script type="module">
+			import Reveal from '/dist/reveal.esm.js'
+			import Markdown from '/plugin/markdown/markdown.esm.js'
+			import Notes from '/plugin/notes/notes.esm.js'
+			import Highlight from '/plugin/highlight/highlight.esm.js'
+			import Appearance from '/node_modules/reveal.js-appearance/plugin/appearance/appearance.esm.js'
+			import RevealJoyCon from '/node_modules/reveal.js-joycon-plugin/dist/joycon-plugin.js'
 			Reveal.initialize({
 				hash: true,
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, Appearance ]
+				plugins: [ Markdown, Notes, Highlight, Appearance, RevealJoyCon ]
 			});
 		</script>
 	</body>
